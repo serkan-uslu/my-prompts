@@ -1,37 +1,27 @@
 # my-prompts
 
-> Write your standards once. Use them in every project, every session, forever.
+> My personal AI system prompts and coding rules — for my own workflow and projects.
 
 ---
 
 ## What This Is
 
-A personal library of prompts and coding rules — built for a frontend developer who works across Next.js, Vite, Node.js, and React Native. Works with Claude, GPT, and Gemini.
+My personal collection of system prompts, task prompts, and coding rules. I use these in my own projects and AI sessions — Claude, GPT, and Gemini.
 
-Nothing here is theoretical. Every rule was extracted from a real project, a real mistake, or a real pattern worth repeating.
-
----
-
-## The Problem → The Solution
-
-**Problem:** Every time you start a new project or open a new AI session, you re-explain the same things. Your preferred stack, naming conventions, architecture patterns, what you hate — all of it, again. Inconsistent output, wasted context, repeated decisions.
-
-**Solution:** Define your standards once in this repo. Copy the relevant file into your project as `CLAUDE.md`, or paste it at the start of any session. The AI works within your rules from the first message.
+Instead of re-explaining my stack, preferences, and conventions to an AI every single session, I write them here once and reuse them everywhere. Every file here comes from a real project or a real mistake.
 
 ---
 
-## How to Use
+## How I Use These
 
-**1. Find the right file** — browse the sections below and pick what matches your task.
-
-**2. Drop it into your project as `CLAUDE.md`**
+**Drop into a project as `CLAUDE.md`**
 ```
-your-project/
-└── CLAUDE.md  ←  paste the contents of nextjs/development-rules.md here
+my-project/
+└── CLAUDE.md  ←  nextjs/development-rules.md content goes here
 ```
-Claude Code reads `CLAUDE.md` automatically on startup. No re-explaining needed.
+Claude Code reads it automatically on startup. No re-explaining needed.
 
-**3. Or paste it at session start** — works with Claude, ChatGPT, and Gemini.
+**Or paste at session start** — works the same with Claude, ChatGPT, and Gemini.
 
 ---
 
@@ -160,13 +150,13 @@ JSON payloads ready to paste. Flux.1 Dev via fal.ai or Replicate.
 
 Every file follows the same structure. Use [`templates/PROMPT_TEMPLATE.md`](templates/PROMPT_TEMPLATE.md) as the starting point.
 
-When a project teaches you something new → add it here. When a rule stops working → update it. This library is only useful if it stays current.
+When a project teaches me something new → I add it here. When a rule stops working → I update it.
 
 ---
 
 ## Philosophy
 
-- **Create once, reuse everywhere.** The goal isn't a collection of interesting prompts. It's eliminating repeated decisions. If you've explained something to an AI twice, it belongs here.
+- **Create once, reuse everywhere.** If I've explained something to an AI twice, it belongs here.
 - **Rules are decisions made once.** Every rule represents a choice — often made the hard way — that shouldn't need to be made again.
 - **Specificity over generality.** "Write clean code" is useless. "Named exports for all components, default export only for page.tsx" is actionable.
 - **Production-tested only.** If a rule hasn't survived contact with a real project, it doesn't belong here.
