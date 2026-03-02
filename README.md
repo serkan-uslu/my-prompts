@@ -146,6 +146,16 @@ JSON payloads ready to paste. Flux.1 Dev via fal.ai or Replicate.
 
 ---
 
+## My Projects
+
+Active projects and their specifications.
+
+| Project | Link | What it is |
+|---------|------|-----------|
+| semantic-notes | [serkan-uslu/semantic-notes](https://github.com/serkan-uslu/semantic-notes) | Notes app with semantic search and AI-powered organization. |
+
+---
+
 ## Adding New Rules
 
 Every file follows the same structure. Use [`templates/PROMPT_TEMPLATE.md`](templates/PROMPT_TEMPLATE.md) as the starting point.
