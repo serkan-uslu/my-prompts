@@ -36,7 +36,15 @@ Format: `[Date] — File — What changed and why`
 ### Updated
 - `README.md` — Vite.js ve Node.js eklendi: structure, combinations, priority guide, GitHub topics
 - `README.md` — Tamamen yeniden yazıldı: Type 2 (Content Repo) kurallarına göre, "create once, reuse everywhere" felsefesi öne çıkarıldı, Problem → Solution formatı, gereksiz bölümler kaldırıldı
+- `README.md` — Tüm prompt dosyaları linklendi, prompt türleri (System/Task/Chain/Image) tablosu eklendi
 - `github/readme-rules.md` — 3 repo tipi için sistem promptları: Code, Content, Boilerplate
+- `image-generation/flux2-dev-prompts.md` — Flux.1 Dev JSON payloads: UI mockup, hero, OG image, app icon, illustration
+- `task-prompts/commit-message.md` — Conventional commit message task promptu
+- `task-prompts/pr-description.md` — GitHub PR description task promptu
+- `task-prompts/feature-spec.md` — Feature request → teknik spec task promptu
+- `task-prompts/code-explanation.md` — Kod açıklama (junior / peer / rubber duck) task promptu
+- `chain-prompts/feature-planning.md` — 3 adımlı feature planning chain promptu
+- `chain-prompts/bug-investigation.md` — 3 adımlı bug investigation chain promptu
 
 ---
 
