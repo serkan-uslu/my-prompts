@@ -1,79 +1,98 @@
-# my-prompts — Personal Prompt Library
+# my-prompts
 
-> Prompt engineering is now a core skill for Frontend Developers.
-> This repo is a collection of prompts and rules tested in production with AI tools.
+> Write your standards once. Use them in every project, every session, forever.
 
 ---
 
 ## What This Is
 
-A living collection of Claude prompts and rules that make AI actually useful in day-to-day frontend development. Not theoretical — every rule here has been used in a real project.
+A personal library of Claude prompts and coding rules — built for a frontend developer who works across Next.js, Vite, Node.js, and React Native.
 
-**The core idea:** Stop re-explaining context every session. Define your standards once, reuse everywhere.
+Nothing here is theoretical. Every rule was extracted from a real project, a real mistake, or a real pattern worth repeating.
+
+---
+
+## The Problem → The Solution
+
+**Problem:** Every time you start a new project or open a new Claude session, you re-explain the same things. Your preferred stack, naming conventions, architecture patterns, what you hate — all of it, again. Inconsistent output, wasted context, repeated decisions.
+
+**Solution:** Define your standards once in this repo. Copy the relevant file into your project as `CLAUDE.md`, or paste it at the start of a session. Claude works within your rules from the first message.
 
 ---
 
 ## How to Use
 
-### Option 1 — As CLAUDE.md (Recommended)
-Copy any rules file into your project as `CLAUDE.md`. Claude Code reads it automatically at startup.
+**1. Find the right file**
+Browse the structure below and pick the file that matches your current task.
 
+**2. Drop it into your project**
 ```
-my-project/
-└── CLAUDE.md   ← paste contents of nextjs/development-rules.md here
+your-project/
+└── CLAUDE.md  ←  paste the contents of nextjs/development-rules.md here
 ```
+Claude Code reads `CLAUDE.md` automatically on startup. No re-explaining needed.
 
-### Option 2 — Paste at Session Start
-Open a new Claude chat, paste the relevant rules file. Claude follows those rules for the entire session.
-
-### Option 3 — Combine Rules
-For a full-stack Next.js project, combine:
-```
-nextjs/development-rules.md
-+
-code-quality/typescript-rules.md
-+
-state-and-data/api-rules.md
-```
+**3. Or paste it at session start**
+Open Claude, paste the file contents. It holds those rules for the entire conversation.
 
 ---
 
-## Repository Structure
+## What's Inside
 
 ```
 my-prompts/
 │
-├── README.md
-├── PHILOSOPHY.md
-├── CHANGELOG.md
+├── nextjs/              Next.js 14+ App Router — architecture, API routes, DB, UI
+├── vitejs/              Vite + React SPA — project setup, dev rules, build optimization
+├── nodejs/              Node.js REST API — Express, security, Prisma, project structure
+├── react-native/        Expo + React Native — setup, navigation, platform differences
 │
-├── nextjs/              # Next.js 14+ App Router rules
-├── react-native/        # Expo + React Native rules
-├── styling/             # Tailwind CSS + Design System
-├── code-quality/        # TypeScript, components, debugging
-├── state-and-data/      # State management, API, data fetching
-├── ai-integration/      # Ollama, AI API wrappers
-└── templates/           # Prompt file template
+├── styling/             Tailwind CSS conventions, design system, token structure
+├── state-and-data/      Zustand, TanStack Query, API client patterns
+├── code-quality/        TypeScript, components, naming, debug, review, refactor
+├── ai-integration/      Ollama local AI, Anthropic/OpenAI API wrappers
+│
+├── github/              README templates for different repo types
+└── templates/           Blank template — structure for adding new rule files
 ```
 
----
-
-## Priority Guide
-
-Start here for immediate value:
-
-| File | When to Use |
-|------|-------------|
-| `nextjs/development-rules.md` | Every Next.js project |
-| `code-quality/component-rules.md` | Framework-agnostic, universal |
-| `nextjs/feature-rules.md` | When building a new feature |
-| `code-quality/debug-rules.md` | When debugging a tricky bug |
+| Section | What it covers |
+|---------|---------------|
+| `nextjs/development-rules.md` | The base CLAUDE.md for any Next.js project |
+| `vitejs/development-rules.md` | The base CLAUDE.md for any Vite SPA |
+| `nodejs/security-rules.md` | Non-negotiable security checklist for every Node.js API |
+| `code-quality/debug-rules.md` | Structured context template — stops Claude giving generic answers |
+| `code-quality/refactor-rules.md` | Safe refactoring rules — behavior must not change |
+| `github/readme-rules.md` | System prompts for writing READMEs for any repo type |
 
 ---
 
-## GitHub Topics
+## Philosophy
 
-`prompt-engineering` `nextjs` `claude` `ai` `developer-tools` `frontend` `react-native` `typescript`
+- **Create once, reuse everywhere.** The goal isn't a collection of interesting prompts. It's eliminating repeated decisions. If you've explained something to Claude twice, it belongs here.
+
+- **Rules are decisions made once.** Every rule in this library represents a choice — often made the hard way — that shouldn't need to be made again.
+
+- **Specificity over generality.** "Write clean code" is useless. "Named exports for all components, default export only for page.tsx" is actionable. Vague rules produce vague output.
+
+- **Production-tested only.** If a rule hasn't survived contact with a real project, it doesn't belong here. No theoretical best practices.
+
+---
+
+## Adding New Rules
+
+Every file follows the same structure. Use `templates/PROMPT_TEMPLATE.md` as the starting point:
+
+```
+🎯 Purpose       — what this file does in 1-2 sentences
+📋 Context       — stack versions, assumptions
+💬 The Prompt    — the actual rules Claude follows
+⚙️ Variables     — what to replace before using
+📝 Example       — what correct output looks like
+🔄 Variations    — how to adapt for different situations
+```
+
+When a project teaches you something new → add it here. When a rule stops working → update it. This library is only useful if it stays current.
 
 ---
 

@@ -33,6 +33,26 @@ Format: `[Date] — File — What changed and why`
 - `ai-integration/ollama-prompts.md` — Local AI (Ollama) prompts
 - `ai-integration/api-wrapper-rules.md` — AI API integration rules
 
+### Updated
+- `README.md` — Vite.js ve Node.js eklendi: structure, combinations, priority guide, GitHub topics
+- `README.md` — Tamamen yeniden yazıldı: Type 2 (Content Repo) kurallarına göre, "create once, reuse everywhere" felsefesi öne çıkarıldı, Problem → Solution formatı, gereksiz bölümler kaldırıldı
+- `github/readme-rules.md` — 3 repo tipi için sistem promptları: Code, Content, Boilerplate
+
+---
+
+## 2026-03-02 (ek)
+
+### Added
+- `vitejs/README.md` — Vite klasörü overview, Next.js fark tablosu
+- `vitejs/project-init-rules.md` — Vite + React + TypeScript scaffold, path alias, env var kuralları
+- `vitejs/development-rules.md` — SPA geliştirme kuralları, React Router v6, feature-based yapı
+- `vitejs/build-rules.md` — Bundle optimizasyonu, code splitting, deployment kuralları
+- `nodejs/README.md` — Node.js klasörü overview
+- `nodejs/project-init-rules.md` — Express + TypeScript scaffold, config/env.ts Zod validation
+- `nodejs/api-rules.md` — Controller/Service/Repository pattern, response format, pagination
+- `nodejs/security-rules.md` — helmet, CORS, rate limiting, JWT, authorization checklist
+- `nodejs/db-rules.md` — Repository pattern, transaction, N+1 önleme, soft delete, migration
+
 ---
 
 *Add entries here whenever you update, add, or deprecate a rules file. Include the reason — future you will thank present you.*
